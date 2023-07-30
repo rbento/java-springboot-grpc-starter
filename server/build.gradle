@@ -1,0 +1,9 @@
+plugins {
+  id 'rbento.starter.java-springboot-conventions'
+}
+
+dependencies {
+  implementation project(":api")
+  implementation libs.commons.lang3
+  testImplementation libs.grpc.testing
+}

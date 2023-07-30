@@ -1,0 +1,10 @@
+plugins {
+  id 'rbento.starter.java-common-conventions'
+  id 'org.springframework.boot'
+  id 'io.spring.dependency-management'
+}
+
+dependencies {
+  implementation libs.spring.boot.starter
+  testImplementation libs.spring.boot.starter.test
+}

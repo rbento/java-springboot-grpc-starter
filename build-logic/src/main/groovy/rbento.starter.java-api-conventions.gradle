@@ -1,0 +1,15 @@
+plugins {
+  id 'rbento.starter.java-library-conventions'
+  id 'com.google.protobuf'
+}
+
+dependencies {
+  api libs.javax.annotation.api
+  api libs.bundles.grpc.minimal
+}
+
+protobuf {
+  protoc {
+    artifact = libs.protoc.artifact.get()
+  }
+}
