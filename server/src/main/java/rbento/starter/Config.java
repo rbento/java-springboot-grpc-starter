@@ -1,7 +1,7 @@
 
 /* Copyright (c) 2023 Rodrigo Bento */
 
-package rbento.starter.config;
+package rbento.starter;
 
 import jakarta.annotation.PostConstruct;
 import java.util.List;
@@ -19,10 +19,10 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "starter")
 public class Config {
 
-    String host;
-    Integer port;
-    List<String> strings;
-    Map<String, String> maps;
+    private String host;
+    private Integer port;
+    private List<String> strings;
+    private Map<String, String> maps;
 
     @PostConstruct
     public void init() {
