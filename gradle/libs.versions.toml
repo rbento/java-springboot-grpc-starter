@@ -27,6 +27,7 @@ spring-dependency-management-gradle = { module = "io.spring.gradle:dependency-ma
 
 # Gradle Plugin Configuration
 errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone-core" }
+spring-boot-annotation-processor = { module = "org.springframework.boot:spring-boot-configuration-processor" }
 
 # Artifact
 protoc-artifact = { module = "com.google.protobuf:protoc", version.ref = "protoc" }
