@@ -12,6 +12,7 @@ dependencies {
     implementation files(libs.class.superclass.protectionDomain.codeSource.location)
 
     implementation libs.errorprone.gradle
+    implementation libs.lognet.grpc.gradle
     implementation libs.lombok.gradle
     implementation libs.protobuf.gradle
     implementation libs.spotless.gradle

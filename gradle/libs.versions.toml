@@ -2,9 +2,12 @@
 # Plugins
 errorprone = "3.1.0"
 errorprone-core = "2.20.0"
+lognet-grpc = "5.1.4" # https://github.com/LogNet/grpc-spring-boot-starter/blob/master/ReleaseNotes.md
 lombok = "8.0.1"
-spotless = "6.19.0"
 protobuf = "0.9.4"
+spotless = "6.19.0"
+spring-boot = "3.1.1"
+spring-dependency-management = "1.1.2"
 
 # Libraries
 assertj = "3.24.2"
@@ -19,11 +22,12 @@ protoc = "3.23.4"
 [libraries]
 # Gradle Plugin Classpath
 errorprone-gradle = { module = "net.ltgt.gradle:gradle-errorprone-plugin", version.ref = "errorprone" }
+lognet-grpc-gradle = { module = "io.github.lognet:grpc-spring-boot-starter-gradle-plugin", version.ref = "lognet-grpc" }
 lombok-gradle = { module = "io.freefair.gradle:lombok-plugin", version.ref = "lombok" }
 protobuf-gradle = { module = "com.google.protobuf:protobuf-gradle-plugin", version.ref = "protobuf" }
 spotless-gradle = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }
-spring-boot-gradle = { module = "org.springframework.boot:spring-boot-gradle-plugin", version = "3.1.2" }
-spring-dependency-management-gradle = { module = "io.spring.gradle:dependency-management-plugin", version = "1.1.2" }
+spring-boot-gradle = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+spring-dependency-management-gradle = { module = "io.spring.gradle:dependency-management-plugin", version.ref = "spring-dependency-management" }
 
 # Gradle Plugin Configuration
 errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone-core" }
@@ -53,8 +57,11 @@ spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-star
 [plugins]
 protobuf = { id = "com.google.protobuf", version.ref = "protobuf" }
 errorprone = { id = "net.ltgt.errorprone", version.ref = "errorprone" }
+lognet-grpc = { id = "io.github.lognet.grpc-spring-boot", version.ref = "lognet-grpc" }
 lombok = { id = "io.freefair.lombok", version.ref = "lombok" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
 
 [bundles]
 grpc-minimal = [
