@@ -32,10 +32,11 @@ spotless {
   java {
     target 'src/*/java/**/*.java'
     targetExclude "${buildDir}/**"
-    importOrder()
     removeUnusedImports()
+    importOrder()
     palantirJavaFormat()
     formatAnnotations()
+    trimTrailingWhitespace()
     endWithNewline()
     licenseHeaderFile "${project.rootDir}/COPYRIGHT"
   }

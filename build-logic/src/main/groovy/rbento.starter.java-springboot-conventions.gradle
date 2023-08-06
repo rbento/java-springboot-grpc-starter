@@ -1,9 +1,8 @@
-
 plugins {
   id 'rbento.starter.java-common-conventions'
-  id 'io.github.lognet.grpc-spring-boot'
-  id 'io.spring.dependency-management'
   id 'org.springframework.boot'
+  id 'io.spring.dependency-management'
+  id 'io.github.lognet.grpc-spring-boot'
 }
 
 dependencies {
