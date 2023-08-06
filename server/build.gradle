@@ -5,5 +5,6 @@ plugins {
 dependencies {
   implementation project(":api")
   implementation libs.commons.lang3
-  testImplementation libs.grpc.testing
+  implementation libs.bundles.grpc
+  implementation libs.bundles.grpc.test
 }

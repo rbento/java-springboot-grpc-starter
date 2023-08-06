@@ -67,11 +67,15 @@ spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
 spring-dependency = { id = "io.spring.dependency", version.ref = "spring-dependency" }
 
 [bundles]
-grpc-minimal = [
+grpc = [
 	"grpc-netty",
 	"grpc-protobuf",
 	"grpc-services",
 	"grpc-stub",
 	"protobuf-java",
 	"protobuf-java-util"
+]
+
+grpc-test = [
+	"grpc-testing"
 ]
