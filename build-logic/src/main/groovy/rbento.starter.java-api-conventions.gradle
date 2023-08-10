@@ -4,8 +4,8 @@ plugins {
 }
 
 dependencies {
-  implementation libs.javax.annotation.api
-  implementation libs.bundles.grpc
+  api libs.bundles.grpc
+  api libs.javax.annotation.api
 }
 
 protobuf {

@@ -1,7 +1,7 @@
 
 /* Copyright (c) 2023 Rodrigo Bento */
 
-package rbento.starter;
+package rbento.starter.server;
 
 import io.grpc.ManagedChannel;
 import io.grpc.inprocess.InProcessChannelBuilder;

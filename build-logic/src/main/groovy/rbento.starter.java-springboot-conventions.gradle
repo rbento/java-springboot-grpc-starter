@@ -5,6 +5,10 @@ plugins {
   id 'io.github.lognet.grpc-spring-boot'
 }
 
+configurations.all {
+  exclude group: 'commons-logging', module: 'commons-logging'
+}
+
 dependencies {
   annotationProcessor libs.spring.boot.annotation.processor
   implementation libs.spring.boot.starter

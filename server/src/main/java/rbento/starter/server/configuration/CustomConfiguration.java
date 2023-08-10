@@ -1,7 +1,7 @@
 
 /* Copyright (c) 2023 Rodrigo Bento */
 
-package rbento.starter;
+package rbento.starter.server.configuration;
 
 import jakarta.annotation.PostConstruct;
 import java.util.List;
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 @Setter
 @Configuration
 @ConfigurationProperties(prefix = "starter")
-public class Config {
+public class CustomConfiguration {
 
     private String host;
     private Integer port;
